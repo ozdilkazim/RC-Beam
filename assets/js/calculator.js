@@ -69,13 +69,13 @@ const calcIBeam = (h, tw, wfb, tfb, wft, tft) => {
 
     // S1
     d1y = Math.abs((h - tft / 2) - ym);
-    d1x = Math.abs((Math.max(wfb, wft) / 2) - xm);
+    d1x = Math.abs(wft / 2 - xm);
     // S2
     d2y = Math.abs((tfb + hw / 2) - ym);
-    d2x = Math.abs((Math.max(wfb, wft) / 2) - xm);
+    d2x = Math.abs((tw / 2) - xm);
     // S3
     d3y = Math.abs((tfb / 2) - ym);
-    d3x = Math.abs((Math.max(wfb, wft) / 2) - xm);
+    d3x = Math.abs((wfb / 2) - xm);
 
     // Moment of Inertia
     momentofInartiaY = I1 + I2 + I3 + A1 * Math.pow(d1y , 2) + A2 * Math.pow(d2y , 2) + A3 * Math.pow(d3y , 2); 
@@ -83,7 +83,7 @@ const calcIBeam = (h, tw, wfb, tfb, wft, tft) => {
     momentofInartiaY = momentofInartiaY.toExponential();
     momentofInartiaX = momentofInartiaX.toExponential();
 
-    console.log(h, tw, wfb, tfb, wft, tft, hw)
+    console.log(h, tw, wfb, tfb, wft, tft, hw);
     console.log(A1, y1, x1, I1, d1y, d1x);
     console.log(A2, y2, x2, I2, d2y, d2x);
     console.log(A3, y3, x3, I3, d3y), d3x;
