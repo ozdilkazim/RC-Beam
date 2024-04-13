@@ -1,2 +1,2 @@
 # RC-Beam
-Calculate reinforcement in a regtangular beam
+Calculate mechanical properties of various beam of different shapes
