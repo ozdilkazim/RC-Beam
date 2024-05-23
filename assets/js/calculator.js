@@ -1,5 +1,5 @@
+console.log('CODE MOVED TO AN OTHER REPOSITORY IN NAME OF `REACT STRUCTURAL ENGINEERING PROJECT. THANK YOU`')
 console.log('Calculator')
-
 // const height = $("#height").value();
 // const width = $("#width").value();
 // const thickness = $("#thickness").value();
@@ -141,9 +141,8 @@ const calcIBeam = (h, tw, wfb, tfb, wft, tft) => {
 }
 // h, tw, wfb, tfb, wft, tft
 // calcIBeam(376,25,150,38,250,38);
-// If the section is L-SECTION
-// If the section is I-BEAM
 
+// If the section is L-SECTION
 const calcLBeam = (h, tw, wfb, tfb) => {
     hw = h - tfb;
 
